@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+header {
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+#banner {
+  width: 40%;
+}
+
+body {
+  background-color: #0F1629;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+.img-section {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+input {
+  line-height: 22px;
+  width: 135%;
+  font-family: "Varela Round", sans-serif;
+  border-style: none;
+  border-radius: 2px;
+}
+
+input:focus {
+  border-style: none;
+}
+
+td {
+  text-align: right;
+  font-size: 19px;
+}
+
+tr td:first-child {
+  padding-left: 0px;
+}
+
+td {
+  padding: 10px 0px 10px 30px;
+}
+
+th {
+  font-size: 21px;
+  text-align: left;
+}
+
+.submitButton {
+  margin-top: 10px;
+  padding: 6px 15px;
+  background-color: #00a2f8;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25%;
+  border-style: none;
+}
+
+.submitButton:hover {
+  background-color: #0089D2;
+}
+
+#paramform {
+  background-color: #090d18;
+  border-radius: 10px;
+  width: 25%;
+  padding: 20px 20px;
+}
+
+#i-help {
+  cursor: help;
+}
+
+.i-info {
+  position: relative;
+}
+
+.i-info:hover:before, .i-info:hover:after {
+  display: block;
+  /*opacity: 1;*/
+}
+
+.i-info:before {
+  font-size: 14px;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 5px 1px black;
+          box-shadow: 0px 0px 5px 1px black;
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 1;
+  font-family: "Varela Round", sans-serif;
+  /* vertically center */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* move to right */
+  left: 100%;
+  margin-left: 15px;
+  /* and add a small left margin */
+  /* basic styles */
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.i-info:after {
+  content: "";
+  position: absolute;
+  /* position tooltip correctly */
+  left: 100%;
+  margin-left: -5px;
+  /* vertically center */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* the arrow */
+  border: 10px solid #000;
+  border-color: transparent black transparent transparent;
+  display: none;
+}
+
+.i-info:before, .i-info:after {
+  /*opacity: 0;
+		transition: $tt_fade opacity;*/
+  cursor: auto;
+}
+
+/*
+.i-info {
+	background-color: grey;
+	border-radius: 20px;
+	width: 30px;
+	height: 30px;
+}*/
+/*
+form {
+	font-family: $fontcb;
+	font-family: $varela;
+	
+}*/
+/*# sourceMappingURL=styles.css.map */
